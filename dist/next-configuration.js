@@ -2,8 +2,8 @@
  * name: @feizheng/next-configuration
  * description: Json configuration for next.
  * homepage: https://github.com/afeiship/next-configuration
- * version: 1.0.0
- * date: 2020-04-23T14:52:07.418Z
+ * version: 1.0.1
+ * date: 2020-04-24T07:24:15.886Z
  * license: MIT
  */
 
