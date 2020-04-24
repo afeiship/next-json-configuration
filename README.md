@@ -13,7 +13,7 @@ npm install -S @feizheng/next-configuration
 | gets   | -            | Get all values.          |
 | set    | (path,value) | Set value by path.       |
 | sets   | object       | Set multi value by path. |
-| update | (ojbect)     | Set value and save.      |
+| update | ojbect       | Set value and save.      |
 | save   | -            | Save to path.            |
 
 ## usage
