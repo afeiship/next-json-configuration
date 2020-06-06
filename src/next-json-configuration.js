@@ -7,8 +7,8 @@
   var NxJsonConfiguration = nx.declare('nx.JsonConfiguration', {
     extends: NxAbstractConfiguration,
     methods: {
-      initOptions: function (inOptions) {
-        this.options = nx.mix(null, DEFALUT_OPTIONS, inOptions);
+      defauts: function () {
+        return DEFALUT_OPTIONS;
       },
       load: function () {
         return require(this.options.path);

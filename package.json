@@ -1,6 +1,6 @@
 {
   "name": "@feizheng/next-json-configuration",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Json configuration for next.",
   "homepage": "https://github.com/afeiship/next-json-configuration",
   "author": {
@@ -32,7 +32,7 @@
     "yargs": "^15.3.1"
   },
   "dependencies": {
-    "@feizheng/next-abstract-configuration": "^1.0.4",
+    "@feizheng/next-abstract-configuration": "^1.1.0",
     "@feizheng/next-js-core2": "^2.5.0"
   },
   "publishConfig": {
