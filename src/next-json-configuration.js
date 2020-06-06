@@ -7,7 +7,7 @@
   var NxJsonConfiguration = nx.declare('nx.JsonConfiguration', {
     extends: NxAbstractConfiguration,
     methods: {
-      defauts: function () {
+      defaults: function () {
         return DEFALUT_OPTIONS;
       },
       load: function () {

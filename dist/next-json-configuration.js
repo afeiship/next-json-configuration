@@ -2,8 +2,8 @@
  * name: @feizheng/next-json-configuration
  * description: Json configuration for next.
  * homepage: https://github.com/afeiship/next-json-configuration
- * version: 1.1.2
- * date: 2020-06-06T04:09:11.484Z
+ * version: 1.1.3
+ * date: 2020-06-06T04:13:19.941Z
  * license: MIT
  */
 
@@ -16,7 +16,7 @@
   var NxJsonConfiguration = nx.declare('nx.JsonConfiguration', {
     extends: NxAbstractConfiguration,
     methods: {
-      defauts: function () {
+      defaults: function () {
         return DEFALUT_OPTIONS;
       },
       load: function () {
