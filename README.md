@@ -6,14 +6,5 @@
 npm install -S @feizheng/next-json-configuration
 ```
 
-## apis
-| api | params | description   |
-|-----|--------|---------------|
-| get | -      | desc balabala |
-
-## usage
-```js
-import NxJsonConfiguration from '@feizheng/next-json-configuration';
-
-// code goes here:
-```
+## resources
+- https://github.com/afeiship/next-abstract-configuration
