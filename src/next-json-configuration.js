@@ -1,6 +1,7 @@
 (function () {
   var global = global || this || window || Function('return this')();
   var nx = global.nx || require('@feizheng/next-js-core2');
+  var fs = require('fs');
   var NxAbstractConfiguration = nx.AbstractConfiguration || require('@feizheng/next-abstract-configuration');
   var DEFALUT_OPTIONS = { path: null, indent: 2, charset: 'utf8' };
 
@@ -11,7 +12,12 @@
         return DEFALUT_OPTIONS;
       },
       load: function () {
-        return require(this.options.path);
+        return JSON.parse(
+          fs.readFileSync(
+            this.options.path,
+            this.options.charset
+          )
+        );
       },
       dump: function () {
         return JSON.stringify(this.data, null, this.options.indent);
