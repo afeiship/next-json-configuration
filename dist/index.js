@@ -3,7 +3,7 @@
  * description: Json configuration for next.
  * homepage: https://github.com/afeiship/next-json-configuration
  * version: 1.0.0
- * date: 2020-11-21 08:44:02
+ * date: 2020-11-21 08:59:55
  * license: MIT
  */
 

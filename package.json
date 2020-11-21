@@ -37,5 +37,10 @@
   },
   "dependencies": {
     "@jswork/next-abstract-configuration": "^1.0.0"
-  }
+  },
+  "keywords": [
+    "next",
+    "configuration",
+    "config"
+  ]
 }
