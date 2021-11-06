@@ -1,12 +1,12 @@
-(function() {
+(function () {
   const NxJsonConfiguration = require('../src');
 
-  describe('NxJsonConfiguration.methods', function() {
-    test('set/sets', function () {
-      var path = '/Users/feizheng/github/next-json-configuration/__tests__/pkg.json';
+  describe('NxJsonConfiguration.methods', function () {
+    test('set/sets to pkg.json', function () {
+      var path = process.cwd() + '/__tests__/pkg.json';
       var store = new NxJsonConfiguration({ path });
       store.update({ name: 'test-name' });
-      console.log(store);
+      expect(store.get('name')).toBe('test-name');
     });
   });
 })();

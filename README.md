@@ -19,8 +19,12 @@ npm install -S @jswork/next-json-configuration
 ## usage
 ```js
 import NxJsonConfiguration from '@jswork/next-json-configuration';
+import path from 'path';
 
-// code goes here:
+const conf = new NxJsonConfiguration({ path: path.join(process.cwd(), 'package.json') });
+conf.set('version', '1.0.1');
+conf.get('version');  // 1.0.1
+conf.save();
 ```
 
 ## license
