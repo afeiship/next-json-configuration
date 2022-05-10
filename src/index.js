@@ -14,15 +14,19 @@
       },
       load: function () {
         var optPath = this.options.path;
-        var charset = this.options.charset;
-        if (typeof optPath === 'string') return JSON.parse(fs.readFileSync(optPath, charset));
-        var data = optPath.map(function (path) {
-          return JSON.parse(fs.readFileSync(path, charset));
-        });
+        if (typeof optPath === 'string') return this.__read(optPath);
+        var data = optPath.map(this.__read.bind(this)).filter(Boolean);
         return nxDeepAssign.apply(null, data);
       },
       dump: function () {
         return JSON.stringify(this.data, null, this.options.indent);
+      },
+      __read: function (inFilepath) {
+        var charset = this.options.charset;
+        if (fs.existsSync(inFilepath)) {
+          return JSON.parse(fs.readFileSync(inFilepath, charset));
+        }
+        return null;
       }
     }
   });

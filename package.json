@@ -1,6 +1,6 @@
 {
   "name": "@jswork/next-json-configuration",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Json configuration for next.",
   "homepage": "https://github.com/afeiship/next-json-configuration",
   "author": {
@@ -27,7 +27,7 @@
     "gulp-size": "^3.0.0",
     "gulp-uglify": "^3.0.2",
     "jest": "^26.6.3",
-    "release-it": "^14.2.1",
+    "release-it": "^14.14.3",
     "uglify-js": "3.11.6",
     "uglify-save-license": "^0.4.1"
   },
@@ -42,6 +42,7 @@
   "keywords": [
     "next",
     "configuration",
-    "config"
+    "config",
+    "json"
   ]
 }
